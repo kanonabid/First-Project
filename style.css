@@ -1,0 +1,787 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navigation{
+    background-image: linear-gradient(dodgerblue, rgb(5, 59, 121));
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation > ul {
+    display: flex;
+    margin-right: 50px;
+    /* border: 1px solid black; */
+}
+
+#navigation > ul > li{
+    list-style: none;
+    margin:0px 0px;
+    padding: 15px 0px;
+    
+    /* border-right: 3px solid black; */
+    /* border: 1px solid black; */
+}
+
+#navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    border-right: 1px solid black;
+    padding: 15px 20px;
+    transition: 0.5s;
+}
+
+#navigation > ul > li:hover > a{
+    background-color: green;
+}
+/* #subMenu:hover {
+    background-color: green;
+} */
+
+
+#navigation > ul > li:first-child > a{
+    
+    border-left: 1px solid black;
+    
+}
+
+.brandLogo > h2{
+    color: white;
+    margin-left: 50px;
+    font-size: 1.8rem;
+}
+
+.brandLogo > h2 > .logoFirstLetter{
+    color: yellow;
+    margin-left: 50px;
+    
+ }
+
+/* ================dropDown Menu Code Start ============*/
+.dropdownList{
+    background-color: blueviolet;
+    text-align: center;
+    margin-top: 15px;
+    position:absolute;
+    width: 188px;
+    transition: 0.5s;
+    visibility: hidden;  
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    box-shadow: 10px 10px 8px yellowgreen;
+}
+
+
+
+.dropdownList > li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+       
+}
+
+.dropdownList > li:first-child{
+    border: 1px solid black;
+}
+
+.dropdownList > li > a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navigation > ul > li:hover > ul  {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    
+}
+/* #navigation > ul > li:hover > .dropdownList {
+    display: block;
+} */
+
+/* <!-- ===============================Hero Area Code Start Here================ --> */
+
+
+#main-header{
+    text-align: center;
+    background-image: url(image/photo.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container{
+    padding-top: 100px;
+    
+}
+
+.header-container > h1{
+    background-color: rgba(3, 90, 161, 0.527);
+    width: 600px;
+    margin: 20px auto;
+    color: white;
+    font-size: 2.5rem;
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* opacity: 0.6; */
+}
+
+.header-container > button{
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    color: rgb(242, 245, 242);
+    background-color:chocolate;
+    margin-top: 15px;
+    border-radius: 30px 10px 30px 10px;
+    border: 4px solid green;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.header-container > button:hover{
+    background-color: rgba(255, 166, 0, 0.13);
+    color: black;
+}
+
+.header-container > h4{
+    font-size: 1.5rem;
+    color: white;
+
+}
+.header-container > h5{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/* ==========Socila Icon Code Here ===========*/
+.socialIcon{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.socialIcon > a{
+    text-decoration: none;
+}
+
+.socialIcon > a > i{
+    background-color:rgba(210, 105, 30, 0);
+    border: 1px solid green;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    color: white;
+    line-height: 75px;
+    margin: 15px 10px;
+    transition: 0.5s;
+}
+/* .socialIcon > a > i{
+    width: 50px;
+    height: 50px;
+    font-size: 1.7rem;
+    padding: 0px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: brown;
+    line-height: 50px;
+    color: white;
+} */
+
+.socialIcon > a > i:hover{
+    background-color: chocolate;
+}
+
+/* First Section Code Start Here */
+
+.firstSection{
+    background-color: darkslategrey;
+}
+.fSection-Container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 1000px;
+    margin:auto;
+    /* border: 5px solid red; */
+    padding: 100px 0;
+    
+    
+}
+
+
+.fSection-Container > div{
+    width: 300px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+
+.fSection-Container > div:hover{
+    box-shadow: 3px 5px 10px hotpink;
+    
+}
+
+.fSection-Container > div > i{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+
+.fSection-Container > div > h2{
+    margin: 15px 0;
+}
+
+/*
+.fSection-Container > div > p{
+    text-align: justify;
+} */
+
+/* Second Section Code Start Here */
+.smartAreaTitle{
+    
+    width: 250px;
+    margin: auto;
+    position: relative;
+}
+.smartAreaTitle > h2{
+    font-size: 2.2rem;
+    text-align: center;
+    
+}
+
+.smartAreaTitle > h2::after {
+    content: '';
+    top: 61px;
+    left: 85px;
+    width: 100px;
+    height: 5px;
+    background-color:#870a0a;
+    position: absolute;
+    
+}
+
+.smartArea{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+    padding: 50px;
+}
+
+.smartArea-image{
+    /* border: 1px solid black; */
+}
+.smartArea-Text {
+     /* background-color: green; */
+     width: 500px;
+     /* border: 1px solid black; */
+}
+
+.smartArea-Text > h4{
+    text-transform: uppercase;
+    color: #870a0a;
+}
+
+.smartArea-Text > h2 {
+    margin: 20px 0;
+}
+.smartArea-Text > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: #870a0a;
+    font-size: 1.1rem;
+    margin: 20px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.smartArea-Text > a:hover{
+    background-color: #4d0303;
+}
+
+/* ==================================Third Section Code Start Here===================== */
+
+.thirdSection{
+    background-color: rgb(216, 208, 208);
+}
+.serviceArea-Title{
+    padding: 40px 0;
+}
+
+.serviceArea-Title > h2{
+    font-size: 2.2rem;
+    
+}
+
+.serviceCategory{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    /* border: 1px solid black; */
+    
+}
+
+.serviceSectionParent{
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+.serviceName{
+    background-color: lightblue;
+    /* margin: 10px; */
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.serviceName:hover{
+    background-color: rgb(39, 182, 230);
+}
+
+.serviceName > i {
+    font-size: 2.2rem;
+    color: #4d0303;
+}
+
+.serviceName > h2{
+    margin: 20px 0;
+}
+
+
+/* =================================fourthSection Code Start Here====================================== */
+
+.fourthSection{
+    background-color: whitesmoke;
+}
+.fourthSectionParent{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+    /* height: 200px; */
+    /* border: 1px solid black; */
+}
+
+.pricingAreaContainer{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    /* border: 1px solid black; */
+}
+
+.coursePricingTitle > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding:50px 0;
+}
+
+.CardImage{
+    width: 300px;
+    
+}
+
+.CardImageParent{
+    width: 300px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    
+}
+.CardImage > img{
+    max-width:100%;
+}
+.CardImageParent > h3{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.month-pricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+
+.month-pricing > span:first-child{
+    font-size: 1.5rem;
+    
+}
+
+.month-pricing > span:nth-child(2){
+    color: gray;
+}
+.CardImageParent > button{
+    padding: 10px 40px;
+    background-color: #4d0303;
+    /* font-size: 1.5rem; */
+    color:white;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CardImageParent > button:hover{
+    background-color: white;
+    color: black;
+}
+
+.CardImageParent > a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ /* =================================FifthSection Code Start Here====================================== */
+
+.fifthSection{
+    background-color: bisque;
+}
+
+ .fiveSectionContainer{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+ }
+
+ .fiveSectionTitle{
+    text-align: center;
+    padding: 50px 0;
+ }
+ .fiveSectionTitle > h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+ }
+ .fiveSectionTitle > h4 {
+        letter-spacing: 0.3rem;
+        color: gray;
+ }
+ .customerReviewBoxParent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    /* border: 1px solid black; */
+ }
+
+ .customerReviewBox{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+ }
+
+ .customerReviewBox > .customerReviewBoxImages{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+ }
+
+ .customerReviewBoxImages > img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+ }
+
+ .customerReviewBoxText >:first-child{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: inline-block;
+ }
+
+ .customerReviewBoxStar{
+    color: orange;
+    margin-top: 10px;
+ }
+
+
+
+ /*=============================== Six Section Code Start Here ====================================== */
+ 
+ .parallaxSectionParent{
+    
+ }
+ .sixSection{
+    background-image: url(image/parallax.jpg);
+    /* width: 100%;
+    height: 400px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    padding: 80px;
+
+ }
+
+ .parallaxSectionIcon{
+    display: flex;
+    width: 1000px;
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    /* padding: 50px 0; */
+    /* justify-content: center; */
+    /* align-items: center; */
+ }
+
+ .parallaxSectionIcon > div > i{
+    font-size: 2.5rem;
+ }
+
+ .parallaxSectionIcon > div > h2{
+    font-size: 2.0rem;
+    padding: 10px 0;
+ }
+
+ .parallaxSectionIcon > div > h4{
+    font-size: 1.5rem;
+ }
+/* ================================== Seven section code start Here ================================= */
+
+.sevenSectionContainer{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.blog-item-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.blogImageIconDiv{
+    position: relative;
+    border: 1px solid green;
+    overflow: hidden;
+}
+.blogIconDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+    /* background-color: bisque; */
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.blogImageIconDiv:hover .blogIconDiv{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.356);
+
+}
+
+.blogImageIconDiv:hover img{
+    transform: scale(1.5);
+}
+
+.blogIconDiv > i {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+
+.blogImageIconDiv img{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.blogItemText{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.blogItemText > p {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.473);
+}
+
+
+/* ==============Contact Section Code Start Here=========== */
+.contactContainer{
+    width: 1000px;
+    margin: auto;
+    
+    padding-bottom: 100px;
+}
+
+.formParent{
+    background-color: #EAECF0;
+    display: flex;
+}
+
+.fnameEmailParent{
+    display: flex;
+}
+
+.fnameEmailParent input{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding-left: 10px;
+}
+.fnameEmailParent h4{
+    margin: 40px 20px 10px 20px;
+}
+
+.subjectInput {
+    margin: 0 20px;
+    width: 85%;
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+}
+
+.subjectLabel{
+    margin: 20px 20px 10px 20px;
+}
+
+.formTag{
+    width: 600px;
+}
+
+.textArea{
+    margin: 0 20px;
+    width: 85%;
+    height: 100px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.submitBtn{
+    margin: 20px 20px 10px 20px;
+    padding: 10px;
+    background-color: #3252AF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formAddressParent{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.formSingleAddress{
+    text-align: center;
+}
+.formSingleAddress i{
+    background-color: #3252AF;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.formSingleAddress span{
+    font-weight: bold;
+}
+
+/* Footer Section Code Start Here */
+footer{
+    background-color: #3252AF;
+}
+
+.footerContainer{
+    width: 1000px;
+    margin: auto;
+    color: gray;
+}
+
+.footerFirstDivParent{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.singleBox h3 {
+    width: 220px;
+    /* border: 1px solid black; */
+    /* background-color: bisque; */
+    overflow: hidden;
+    color: white;
+    margin: 50px 0px 20px 0;
+}
+
+.singleBoxP1{
+    margin-bottom: 20px;
+}
+.singleBoxP2{
+    margin: 10px 0;
+}
+
+.singleBox i{
+    color: white;
+}
+.footerFirstDivParent .singleBox:nth-child(2) p{
+    margin: 10px 0;
+}
+.footerFirstDivParent .singleBox:nth-child(3) p{
+    margin: 10px 0;
+}
+.footerFirstDivParent .singleBox:nth-child(4) p{
+    margin: 10px 0;
+}
+
+.footerFirstDivParent .singleBox:nth-child(4) a{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.footerSecondDiv{
+    text-align: center;
+    padding: 10px 0;
+    width: 600px;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+
+.hrRule{
+    margin-top: 20px;
+}
+.serviceSection{
+    padding-bottom: 10px;
+}
+.serviceSection a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.footerSecondDiv span{
+    color: brown;
+}
